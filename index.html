@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Temperature Hot</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+    <style>
+      body {
+        background: url(images/sky.png) no-repeat;
+        background-size: cover;
+        height: 100vh;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <form class="col-md-6 m-auto py-5">
+        <h1 class="text-center mb-3">Weather Forecust</h1>
+        <div class="input-group mb-3">
+          <input
+            id="input-city"
+            type="text"
+            class="form-control"
+            placeholder="Enter a city name for Weather..."
+          />
+          <div class="input-group-append">
+            <button
+              onclick="loadweatherData()"
+              type="button"
+              class="btn btn-danger"
+            >
+              Search
+            </button>
+          </div>
+        </div>
+        <div id="spinner" class="text-center">
+          <div
+            class="spinner-grow"
+            style="width: 3rem; height: 3rem"
+            role="status"
+          >
+            <span class="visually-hidden"></span>
+          </div>
+        </div>
+      </form>
+      <div class="weather-status text-black text-center" id="info"></div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
